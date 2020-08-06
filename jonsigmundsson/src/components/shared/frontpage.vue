@@ -1,30 +1,26 @@
 <template>
-    <v-container>
-        <v-row>
-            <h1>Jón Heiðar Sigmundsson</h1>    
-            
-        </v-row>
-        <v-row>
-            <h2>Developer</h2>
-        </v-row>
-        <v-row>
-            <v-col md="1" sm="2">
-                <v-btn> View Portfolio </v-btn>
-            </v-col>
-            <v-col md="1" sm="2">
-                <v-btn> Download Resume </v-btn>
-            </v-col>
-        </v-row>
-    </v-container>
+    <div class="frontpage">
+        <resumebox/>
+        <aboutme/>
+    </div>
 </template>
 
 <script>
+import resumebox  from '../frontpage/resumebox.vue'
+import aboutme from '../frontpage/aboutme.vue'
 export default {
     
+    data(){
+        return {};
+    },
+    components: {
+        resumebox,
+        aboutme
+    }
 }
 </script>
 
-<style lang="less">
+<style lang="scss">
 
 
 

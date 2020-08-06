@@ -5,7 +5,7 @@
         :color="color"
         :expand-on-hover="expandOnHover"
         :mini-variant="miniVariant"
-        :right="left"
+        :right="false"
         :permanent="permanent"
         :src="bg"
         absolute
@@ -18,7 +18,7 @@
         >
           <v-list-item two-line :class="miniVariant && 'px-0'">
             <v-list-item-avatar>
-              <img src="https://randomuser.me/api/portraits/men/81.jpg">
+              <img :src="portPicture">
             </v-list-item-avatar>
 
             <v-list-item-content>
@@ -68,9 +68,10 @@
         ],
         right: true,
         permanent: true,
-        miniVariant: true,
+        miniVariant: true, 
         expandOnHover: true,
-        background: false,
+        background: true,
+        portPicture: require('../../assets/pictures/face.png')
       }
     },
     computed: {
