@@ -1,10 +1,7 @@
 <template>
     <v-container class="about_me">
-        <v-row>
-            <v-col>
-                <img src=""/>
-            </v-col>
-            <v-col>
+        <v-row data-aos="zoom-in-up">
+            <v-col md="4">
                 <h1>About me</h1>    
                 <p class="mainText">
                     Hello, I'm a full stack developer from iceland. I hold an computer science degree from Reykjavik University
@@ -26,3 +23,6 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+
+</style>

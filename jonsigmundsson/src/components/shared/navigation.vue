@@ -1,14 +1,15 @@
 <template>
   <v-container>
       <v-navigation-drawer
+        :bottom="true"
         v-model="drawer"
         :color="color"
         :expand-on-hover="expandOnHover"
         :mini-variant="miniVariant"
-        :right="false"
+        fixed
         :permanent="permanent"
         :src="bg"
-        absolute
+        
         dark
       >
         <v-list
